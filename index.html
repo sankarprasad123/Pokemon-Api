@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+</head>
+<body style="background-color: rgb(98, 223, 154);">
+
+    <div>
+        <h1 id="title">Pokemon Cards</h1>
+    </div>
+
+    <div style="display:flex;justify-content: space-around;">
+        <button id="btn1" onclick="previous()">Previous</button>
+        <div>
+            <label for="number">Limit</label>
+            <input type="number" name="number" id="limit">
+        </div>
+        <button id="btn2"  onclick="next()">Next</button>
+    </div>
+
+    <div id="pokemon"></div>
+
+    <style>
+        #title{
+            font-size: 40px;
+            text-align: center;
+        }
+        #input{
+            height: 20px;
+            /* width: 100px; */
+        }
+        #btn1{
+            height: 40px;
+            width: 100px;
+            border-radius: 20px;
+            border: 1px solid green;
+            margin-top: 25px;
+            font-size: 16px;
+        }
+        #btn1:hover{
+            background-color: rgb(22, 150, 22);
+            color: white;
+        }
+        #btn2{
+            height: 40px;
+            width: 100px;
+            border-radius: 20px;
+            border: 1px solid green;
+            margin-top: 25px;
+            font-size: 16px;
+        }
+        #btn2:hover{
+            background-color: rgb(22, 150, 22);
+            color: white;
+        }
+    </style>
+</body>
+</html>
